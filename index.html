@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="감성카페, 스페셜티커피, 핫플, 디저트맛집, 카페투어">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="COFFEE AN PAM">
+  <meta property="og:title" content="COFFEE AN PAM">
+  <meta property="og:description" content="트렌디한 감성 카페! 스페셜티 커피, 디저트, 아늑한 분위기까지! 인스타 감성 가득한 핫플에서 특별한 시간을 보내세요">
+  <meta property="og:url" content="https://www.starbucks.co.kr/">
+  <title>COFFEE AN PAM</title>
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+  <!-- 리셋 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- 구글 버전 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+               integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+               crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 위에 링크는 최상단에 두어야할 아주 중요한 링크 / 외부 링크를 쓸데 아주 중요한 것 -->
+  <!-- GSAP & ScrollToPlugin CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+               integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollToPlugin.min.js" integrity="sha512-uLq4Xf3PvaO+NTghyBWeh43DxozRnHMM2vcwlxY+KVc7xv2PMLimAerptg7AbrdN2qZjAwExwV/IqGm4YQBPww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- swiper CDN -->
+  <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- scrollMagic -->
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/main.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="top-row">
+        <a href="/" class="logo"><img src="./images/logo.svg" alt="로고이미지"></a>
+        <!-- 상단 서버 메뉴 -->
+        <div class="sub-menu">
+          <ul class="menu">
+            <li><a href="/signin">Sign in</a></li>
+            <li><a href="javascript:void(0)">COFFEE AN PAM</a></li>
+            <li><a href="javascript:void(0)">Customer Service & Ideas</a></li>
+            <li><a href="javascript:void(0)">Find a Store</a></li>
+          </ul>
+          <div class="search">
+            <input type="text">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 메인 메뉴 -->
+      <ul class="main-menu">
+        <!-- COFFEE -->
+        <li class="item">
+          <div class="item__name">COFFEE</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>커피</h4>
+                  <ul>
+                    <li>AN PAM 원두</li>
+                    <li>AN PAM 비아</li>
+                    <li>AN PAM 오라가미</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>에스프레소 음료</h4>
+                  <ul>
+                    <li>도피오</li>
+                    <li>에스프레소</li>
+                    <li>마끼아또</li>
+                    <li>아메리카노</li>
+                    <li>카푸치노</li>
+                    <li>라떼</li>
+                    <li>모카</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>커피 이야기</h4>
+                  <ul>
+                    <li>농장에서 우리의 손으로</li>
+                    <li>최상의 아라비카 원두</li>
+                    <li>AN PAM 로스트 스펙트럼</li>
+                    <li>AN PAM 디카페인</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>최상의 커피를 즐기는 법</h4>
+                  <ul>
+                    <li>커피 프레스</li>
+                    <li>푸어 오버</li>
+                    <li>아이스 오버 푸어 메이커</li>
+                    <li>커피 메이커</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>나와 어울리는 커피 찾기</h4>
+                <p>COFFEE AN PAM가 여러분께 어울리는 커피를 찾아 드립니다.</p>
+                <h4>최상의 커피를 즐기는 법</h4>
+                <p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- MENU -->
+        <li class="item">
+          <div class="item__name">MENU</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>음료</h4>
+                  <ul>
+                    <li>콜드 브루</li>
+                    <li>브루드 커피</li>
+                    <li>에스프레소</li>
+                    <li>프라푸치노</li>
+                    <li>블렌디드</li>
+                    <li>AN PAM 리플레셔</li>
+                    <li>AN PAM 피치오</li>
+                    <li>티(티바나)</li>
+                    <li>기타 제조 음료</li>
+                    <li>AN PAM 주스 (병음료)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>푸드</h4>
+                  <ul>
+                    <li>브레드</li>
+                    <li>케이크</li>
+                    <li>샌드위치 & 샐러드</li>
+                    <li>따뜻한 푸드</li>
+                    <li>과일 & 요거트</li>
+                    <li>스낵 & 미니 디저트</li>
+                    <li>아이스크림</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>상품</h4>
+                  <ul>
+                    <li>머그</li>
+                    <li>글라스</li>
+                    <li>플라스틱 텀블러</li>
+                    <li>스테인리스 텀블러</li>
+                    <li>보온병</li>
+                    <li>액세서리</li>
+                    <li>선물세트</li>
+                    <li>커피용품</li>
+                    <li>패키지 티(티바나)</li>
+                    <li>시럽</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>카드</h4>
+                  <ul>
+                    <li>실물카드</li>
+                    <li>퍼지커피 모바일 카드</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴 이야기</h4>
+                  <ul>
+                    <li>AN PAM 티바나</li>
+                    <li>AN PAM 콜드브루</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>AN PAM 티바나</h4>
+                <p>다양한 찻잎과 향신료 등 개성이 있는 재료로 새로운 맛과 향의 티를 선보입니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- STORE -->
+        <li class="item">
+          <div class="item__name">STORE</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>매장찾기</h4>
+                  <ul>
+                    <li>퀵 검색</li>
+                    <li>지역 검색</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장 이야기</h4>
+                  <ul>
+                    <li>드라이브 스루 매장</li>
+                    <li>리저브 매장</li>
+                    <li>커뮤니티 스토어 매장</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>매장찾기</h4>
+                <p>보다 빠르게 매장을 찾아 보세요</p>
+                <h4>청담 스타</h4>
+                <p>퍼치커피 1,000호점 청담 AN PAM점을 만나 보세요</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- RESPONSIBILITY -->
+        <li class="item">
+          <div class="item__name">RESPONSIBILITY</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>지역 사회 참여 활동</h4>
+                  <ul>
+                    <li>희망배달 캠페인</li>
+                    <li>재능기부 카페 소식</li>
+                    <li>커뮤니티 스토어</li>
+                    <li>청년 지원 프로그램</li>
+                    <li>우리 농산물 자랑 캠페인</li>
+                    <li>국가유산 지킴이 활동</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>환경보호 활동</h4>
+                  <ul>
+                    <li>친환경 활동</li>
+                    <li>일회용 컵 없는 매장</li>
+                    <li>커피 원두 재활용</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>환경보호 활동</h4>
+                  <ul>
+                    <li>친환경 활동</li>
+                    <li>일회용 컵 없는 매장</li>
+                    <li>커피 원두 재활용</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>매장찾기</h4>
+                <p>보다 빠르게 매장을 찾아 보세요</p>
+                <h4>청담 스타</h4>
+                <p>퍼치커피 1,000호점 청담 AN PAM점을 만나 보세요</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- AN PAM REWARDS -->
+        <li class="item">
+          <div class="item__name">AN PAM REWARDS</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>AN PAM 리워드</h4>
+                  <ul>
+                    <li>AN PAM 리워드 소개</li>
+                    <li>등급 및 혜택</li>
+                    <li>AN PAM 별</li>
+                    <li>자주 하는 질문</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>AN PAM 카드</h4>
+                  <ul>
+                    <li>AN PAM 카드 소개</li>
+                    <li>AN PAM 카드 갤러리</li>
+                    <li>자주 하는 질문</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>AN PAM 모바일 카드</h4>
+                  <ul>
+                    <li>AN PAM 모바일 카드 소개</li>
+                    <li>이용안내</li>
+                    <li>선물하기</li>
+                    <li>자주 하는 질문</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>AN PAM 카드 등록하기</h4>
+                <p>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- CORPORATE SALES -->
+        <li class="item">
+          <div class="item__name">CORPORATE SALES</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>단체 및 기업 구매 안내</h4>
+                  <ul>
+                    <li>MD 상품</li>
+                    <li>실물카드</li>
+                    <li>AN PAM 모바일 카드(MMS)</li>
+                    <li>AN PAM 모바일 카드(BULK)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>단체주문 배달 안내</h4>
+                  <ul>
+                    <li>단체주문 배달 안내</li>
+                    <li>단체주문 신청</li>
+                    <li>신청 내역 조회</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>매장별 이벤트</h4>
+                <p>AN PAM의 매장 이벤트 정보를 확인 하실 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- WHAT'S NEW -->
+        <li class="item">
+          <div class="item__name">WHAT'S NEW</div>
+          <div class="item__contents">
+            <div class="contents_menu">
+              <ul class="inner">
+                <li>
+                  <h4>이벤트</h4>
+                  <ul>
+                    <li>전체</li>
+                    <li>카드</li>
+                    <li>AN PAM 리워드</li>
+                    <li>AN PAM 온라인</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>뉴스</h4>
+                  <ul>
+                    <li>전체</li>
+                    <li>상품 출시</li>
+                    <li>AN PAM 문화</li>
+                    <li>AN PAM 사회공헌</li>
+                    <li>AN PAM 카드출시</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장별 이벤트</h4>
+                </li>
+                <li>
+                  <h4>공지사항</h4>
+                  <ul>
+                    <li>일반 매장</li>
+                    <li>신규 매장</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>월페이퍼</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>소셜 AN PAM</h4>
+                <p>다양한 AN PAM SNS 채널을 통해 AN PAM 커피를 만나보세요!</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- BADGES(배너) -->
+    <div class="badges">
+      <div class="badge"><img src="./images/badge_01.jpg" alt="badge1"></div>
+      <div class="badge"><img src="./images/badge_02.jpg" alt="badge2"></div>
+    </div>
+  </header>
+
+  <!-- 비주얼 배너 -->
+  <section class="visual">
+    <div class="inner">
+      <div class="title fade-in">
+        <img src="./images/main_title.svg" alt="타이틀">
+        <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/m_img2.png" alt="슈크림 라떼" class="cup1 image">
+      </div>
+      <div class="fade-in">
+        <img src="./images/m_img3.png" alt="딸기 라떼" class="cup2 image">
+      </div>
+      <div class="fade-in">
+        <img src="./images/m_img1.png" alt="샌드위치" class="bread image">
+      </div>
+    </div>
+  </section>
+
+  <!-- notice -->
+  <section class="notice">
+    <!-- notice-line -->
+    <div class="notice-line">
+    <div class="bg-left">
+    </div>
+    <div class="bg-right">
+      
+    </div>
+    <div class="inner">
+      <div class="inner__left">
+        <h2>공지사항</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="javascript:void(0)">딜리버스 예약 서비스 중단 안내</a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)">시스템 개선 및 서비스 점검 안내</a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)">홈페이지 이용약관 및 AN PAM...</a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)">사이렌 오더 딜리버스 음료 기본...</a></div>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="notice-line__more">
+          <span class="material-symbols-outlined">add_circle</span>
+        </a>
+      </div>
+      <div class="inner__right">
+        <h2>AN PAM 커피 프로모션</h2>
+        <div class="toggle-promotion open">
+          <span class="material-symbols-outlined">downloading</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- promotion -->
+    <div class="promotion">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/promoction_01.svg" alt="프로모션이미지 01"><a href="javascript:void(0)" class="btn btn--white">자세히보기</a></div>
+        <div class="swiper-slide"><img src="./images/promoction_02.svg" alt="프로모션이미지 02"><a href="javascript:void(0)" class="btn btn--white">자세히보기</a></div>
+        <div class="swiper-slide"><img src="./images/promoction_03.svg" alt="프로모션이미지 03"><a href="javascript:void(0)" class="btn btn--white">자세히보기</a></div>
+        <div class="swiper-slide"><img src="./images/promoction_04.svg" alt="프로모션이미지 04"><a href="javascript:void(0)" class="btn btn--white">자세히보기</a></div>
+        <div class="swiper-slide"><img src="./images/promoction_05.svg" alt="프로모션이미지 05"><a href="javascript:void(0)" class="btn btn--white">자세히보기</a></div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-prev">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </div>
+    <div class="swiper-next">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+    </div>
+  </section>
+
+  <!-- rewards -->
+   <!-- 사라지지 않고 덮어버리는 개념 -->
+  <section class="rewards">
+    <div class="inner">
+      <div class="btn-group">
+        <div class="btn btn--reverse sign-up">회원가입</div>
+        <div class="btn sign-in">로그인</div>
+        <div class="btn gift">AN PAM 모바일 카드 선물하기</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- youtube -->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+    <div class="inner">
+      <img src="./images/youtube_01.png" alt="유튜브이미지1" class="floating1 float">
+      <img src="./images/youtube_03.png" alt="유튜브이미지3" class="floating3 float">
+    </div>
+  </section>
+
+  <!-- season product -->
+  <section class="season-product scroll-spy">
+    <div class="inner"> <!-- inner 위에서 잡아놈 -->
+      <img src="./images/youtube_02.png" alt="유튜브이미지2" class="floating2 float">
+      <img src="./images/season_01.png" alt="벚꽃 커피" class="product back-to-position to-right delay-0" />
+      <div class="text-group">
+        <img src="./images/season_01_pont.png" alt="스프링 시즌 블랜드 250g" class="title back-to-position to-left delay-1">
+        <img src="./images/season_01_desc.png" alt="시즌상품1 설명" class="desc back-to-position to-left delay-2">
+        <div class="more back-to-position to-left delay-2"><a href="javascript:void(0)" class="btn btn--pink">자세히 보기</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reserve coffee -->
+  <section class="reserve-coffee scroll-spy">
+    <div class="inner">
+      <img src="./images/reserve_01.svg" alt="리저브로고" class="reserve-logo back-to-position to-right delay-0"/>
+      <div class="text-group back-to-position to-left delay-1">
+        <img src="./images/reserve_product.svg" alt="리저브 설명" class="reserve-text"/>
+        <div class="more">
+          <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
+        </div>
+      </div>
+      <img src="./images/reserve_p.svg" alt="리저브 상품" class="product back-to-position to-left delay-2" />
+    </div>
+  </section>
+
+  <!-- pick favorite -->
+  <section class="pick-your-favorite scroll-spy">
+    <div class="inner">
+      <div class="text-group">
+        <img src="./images/favorite_text_01.png" alt="pick01" class="title back-to-position to-right delay-0" />
+        <img src="./images/favorite_text_02.png" alt="pick02" class="desc back-to-position to-right delay-1" />
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reserve store -->
+  <section class="reserve-store">
+    <div class="inner">
+      <div class="medal">
+        <div class="front"><img src="./images/front_01.png" alt="스토어 앞"></div>
+        <div class="back">
+          <img src="./images/front_02.png" alt="스토어 뒤">
+          <a href="javascript:void(0)" class="btn btn--brown">매장 안내</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- find the store -->
+  <section class="find-store scroll-spy">
+    <div class="inner">
+      <img src="./images/store_01.png" alt="find-store-01" class="picture1 back-to-position to-right delay-0" />
+      <img src="./images/store_02.png" alt="find-store-02" class="picture2 back-to-position to-right delay-1" />
+      <img src="./images/store_icon_01.png.png" alt="find-icon-01" class="texture1 " />
+      <img src="./images/store_icon_02.png" alt="find-icon-02" class="texture2" />
+      <div class="text-group">
+        <img src="./images/store_text_01.png" alt="title" class="title back-to-position to-left delay-1"/>
+        <img src="./images/store_text_02.png" alt="desc" class="desc back-to-position to-left delay-2"/>
+        <div class="more back-to-position to-left delay-2">
+          <a href="javascript:void(0);" class="btn">매장 찾기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- awards -->
+  <section class="awards">
+    <div class="inner">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./images/awards_slide1.jpg" alt="대통령상"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide2.jpg" alt="3년연속"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide3.jpg" alt="우수사업자"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide4.jpg" alt="경연대회"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide5.jpg" alt="상공회의"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide6.jpg" alt="기업사회공헌"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide7.jpg" alt="5년연속"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide8.jpg" alt="커피전문점상"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide9.jpg" alt="동반성장상"></div>
+          <div class="swiper-slide"><img src="./images/awards_slide10.jpg" alt="ks마크상"></div>
+        </div>
+      </div>
+      <div class="awards-prev"><span class="material-symbols-outlined">chevron_left</span></div>
+      <div class="awards-next"><span class="material-symbols-outlined">chevron_right</span></div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="inner">
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="orange">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)" class="orange">위치정보 이용약관 </a></li>
+        <li><a href="javascript:void(0)">AN PAN 카드 이용약관</a></li>
+        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+      </ul>
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn white--reverse">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn white--reverse">신규입점제의</a>
+        <a href="javascript:void(0)" class="btn white--reverse">사이트 맵</a>
+      </div>
+      <div class="info">
+        <span>사업자등록번호 : 201-81-21515</span>
+        <span>주식회사 에스씨케이컴퍼니 대표이사 : 손정현</span>
+        <span>TEL : 1522-3232</span>
+        <span>개인정보 보호책임자 : 이찬우</span>
+      </div>
+      <p class="copy">&copy; <span class="this-year"></span> AN PAN Coffee Company. All Rights Reserved.</p>
+      <img src="./images/footer_logo.png" alt="하단 로고" class="logo"/>
+    </div>
+  </footer>
+  <div id="to-top"><span class="material-symbols-outlined">keyboard_arrow_up</span></div>
+</body>
+</html>
